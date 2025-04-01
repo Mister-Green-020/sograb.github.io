@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoGraB: A Visual Method for Soft Grasping Benchmarking and Evaluation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      padding: 10px;
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+  
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://mister-green-020.github.io/sograb.github.io/">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+  
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SoGraB: A Visual Method for Soft Grasping Benchmarking and Evaluation</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://au.linkedin.com/in/benjamin-greenland">Benjamin Greenland</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.csiro.au/p/j/josh-pinskier">Josh Pinskier</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://au.linkedin.com/in/xing-wang-7a73821b4">Xing Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mister-green-020.github.io/sograb.github.io/">Daniel Nguyen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mister-green-020.github.io/sograb.github.io/">Ge Shi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://people.csiro.au/b/t/tirtha-bandy">Tirthankar Bandyopadhyay</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jenjenchung.github.io/anthropomorphic/">Jen Jen Chung</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://people.csiro.au/H/D/David-Howard">David Howard</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Queensland,</span>
+            <span class="author-block"><sup>2</sup>CSIRO Robotics, Australia</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- ARXIV Link. -->
+              <span class="link-block">
+                <!-- TODO: this needs to be updated. -->
+                <a href="https://mister-green-020.github.io/sograb.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <!-- TODO: this needs to be updated. -->
+                <a href="https://mister-green-020.github.io/sograb.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent years have seen soft robotic grippers gain increasing attention due to their ability to robustly
+            grasp soft and fragile objects. However, a commonly available standardised evaluation protocol has not yet
+            been developed to assess the performance of varying soft robotic gripper designs. This work introduces a
+            novel protocol, the Soft Grasping Benchmarking and Evaluation (SoGraB) method, to evaluate grasping 
+            quality, which quantifies object deformation by using the DensityAware Chamfer Distance (DCD) between point
+            clouds of soft objects before and after grasping. We validated our protocol in extensive experiments, which
+            involved ranking three FinRay gripper designs with a subset of the EGAD object dataset. The protocol
+            appropriately ranked grippers based on object deformation information, validating the method’s ability to
+            select soft grippers for complex grasping tasks and benchmark them for comparison against future designs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video.
+  </div>
+</section>
+
+  
+<footer>
+  <p>Website source code retrieved from: <a href="https://nerfies.github.io" target="_blank">Nerfies Project</a></p>
+</footer>
+
+</body>
+</html>
