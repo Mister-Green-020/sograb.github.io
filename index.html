@@ -28,251 +28,307 @@
 
 <body>
   
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://mister-green-020.github.io/sograb.github.io/">
-        <span class="icon">
-          <i class="fas fa-home"></i>
-        </span>
+  <!-- Navigation Menu -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
-  </div>
-</nav>
 
-  
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SoGraB: A Visual Method for Soft Grasping Benchmarking and Evaluation</h1>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://au.linkedin.com/in/benjamin-greenland">Benjamin Greenland</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://people.csiro.au/p/j/josh-pinskier">Josh Pinskier</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://au.linkedin.com/in/xing-wang-7a73821b4">Xing Wang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://mister-green-020.github.io/sograb.github.io/">Daniel Nguyen</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://mister-green-020.github.io/sograb.github.io/">Ge Shi</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-                <a href="https://people.csiro.au/b/t/tirtha-bandy">Tirthankar Bandyopadhyay</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://jenjenchung.github.io/anthropomorphic/">Jen Jen Chung</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-                <a href="https://people.csiro.au/H/D/David-Howard">David Howard</a><sup>1</sup>
-            </span>
+        <a class="button is-primary navbar-item" href="https://mister-green-020.github.io/author_page.github.io/">
+          Author Profile
+        </a>
+
+        <!-- Publications -->
+        <div class="nav-bar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Publications
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://mister-green-020.github.io/sograb.github.io/">
+              SoGraB: A Visual Method for Soft Grasping Benchmarking and Evaluation
+            </a>
           </div>
+        </div>
+      </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>CSIRO Robotics, </span>
-            <span class="author-block"><sup>2</sup>The University of Queensland, </span>
-            <span class="author-block"><sup>3</sup>Queensland University of Technology</span>
-          </div>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://ieeexplore.ieee.org/document/11020918"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <h1 class="title is-1 publication-title">
+              <div class="gradient-text" style="font-size:1em;">
+                SoGraB:
+              </div>
+              <div>
+                A Visual Method for Soft Grasping Benchmarking and Evaluation
+              </div>
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://au.linkedin.com/in/benjamin-greenland">Benjamin Greenland</a><sup>1,2</sup>,
               </span>
-              <!-- ARXIV Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2411.19408"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-alt"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+              <span class="author-block">
+                <a href="https://people.csiro.au/p/j/josh-pinskier">Josh Pinskier</a><sup>1</sup>,
               </span>
-               <!-- Video Link. -->
-               <span class="link-block">
-                <a href="https://www.youtube.com/playlist?list=PL-IPU_SnvwIOOTcBCAvSIc9evjSR6xeKD"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+              <span class="author-block">
+                <a href="https://au.linkedin.com/in/xing-wang-7a73821b4">Xing Wang</a><sup>1</sup>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <!-- TODO: this needs to be updated. -->
-                <a href="https://github.com/Mister-Green-020/SoGraB"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+              <span class="author-block">
+                Daniel Nguyen<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/shi-ge/">Ge Shi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                  <a href="https://people.csiro.au/b/t/tirtha-bandy">Tirthankar Bandyopadhyay</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://jenjenchung.github.io/anthropomorphic/">Jen Jen Chung</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                  <a href="https://people.csiro.au/H/D/David-Howard">David Howard</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>CSIRO Robotics, </span>
+              <span class="author-block"><sup>2</sup>The University of Queensland, </span>
+              <span class="author-block"><sup>3</sup>Queensland University of Technology</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/11020918"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
                   </a>
-              </span>
+                </span>
+                <!-- ARXIV Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.19408"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Poster Link. -->
+                <span class="link-block">
+                  <a href="https://mister-green-020.github.io/sograb.github.io/static/images/poster.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Poster</span>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/playlist?list=PL-IPU_SnvwIOOTcBCAvSIc9evjSR6xeKD"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <!-- TODO: this needs to be updated. -->
+                  <a href="https://github.com/Mister-Green-020/SoGraB"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
+  <!-- Abstract Section -->
+  <section class="section">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent years have seen soft robotic grippers gain increasing attention due to their ability to robustly
-            grasp soft and fragile objects. However, a commonly available standardised evaluation protocol has not yet
-            been developed to assess the performance of varying soft robotic gripper designs. This work introduces a
-            novel protocol, the Soft Grasping Benchmarking and Evaluation (SoGraB) method, to evaluate grasping 
-            quality, which quantifies object deformation by using the Density-Aware Chamfer Distance (DCD) between point
-            clouds of soft objects before and after grasping. We validated our protocol in extensive experiments, which
-            involved ranking three FinRay gripper designs with a subset of the EGAD object dataset. The protocol
-            appropriately ranked grippers based on object deformation information, validating the method’s ability to
-            select soft grippers for complex grasping tasks and benchmark them for comparison against future designs.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">The Method</h2>
-        <div class="publication-video">
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-            <iframe src="https://www.youtube.com/embed/GId_zV1jrNM" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; 
-                    autoplay; clipboard-write; encrypted-media; gyroscope; 
-                    picture-in-picture" allowfullscreen 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      <div class="column is-four-fifths is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Recent years have seen soft robotic grippers gain increasing attention due to their ability to robustly
+              grasp soft and fragile objects. However, a commonly available standardised evaluation protocol has not yet
+              been developed to assess the performance of varying soft robotic gripper designs. This work introduces a
+              novel protocol, the Soft Grasping Benchmarking and Evaluation (SoGraB) method, to evaluate grasping 
+              quality, which quantifies object deformation by using the Density-Aware Chamfer Distance (DCD) between point
+              clouds of soft objects before and after grasping. We validated our protocol in extensive experiments, which
+              involved ranking three FinRay gripper designs with a subset of the EGAD object dataset. The protocol
+              appropriately ranked grippers based on object deformation information, validating the method’s ability to
+              select soft grippers for complex grasping tasks and benchmark them for comparison against future designs.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </section>
     
-    <!--/ Protocol Flowchart. -->
+
+  <!-- Paper video. -->
+  <section class="section" style="background-color: #f8f9fa; padding: 3rem 0;">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Protocol For Each Trial</h3>
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #fff;">
-          <img src="./static/images/Protocol.png" alt="Protocol For Each Trial" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Note: To maximise accuracy, the Analysis Pose should be selected as to minimise occlusions.
-          </p>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">The Method</h2>
+          <div class="publication-video">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+              <iframe src="https://www.youtube.com/embed/GId_zV1jrNM" 
+                      title="YouTube video player" frameborder="0" allow="accelerometer; 
+                      autoplay; clipboard-write; encrypted-media; gyroscope; 
+                      picture-in-picture" allowfullscreen 
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Explaination of score calculations. -->
+  </section>
+      
+  <!--/ Protocol Flowchart. -->
+  <section class="section">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">SoGraB Score Calculation Explanation</h3>
-        <div class="content has-text-justified">
-          <p>
-            The scoring system evaluates grasp quality using three features, the grasp success, holding time and deformation. The deformation of the objects are determined by calculating the Density-Aware Chamfer Distance (DCD) between point clouds taken before and during the grasp. 
-            This metric ensures that the deformation is quantified accurately, enabling a fair comparison of different soft gripper designs.
-          </p>
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="./static/images/Final Score.png" alt="SoGraB Score" style="width: 100%; height: auto;">
+      <div class="column is-four-fifths is-centered">
+        <div class="column is-10">
+          <h3 class="title is-3">Protocol For Each Trial</h3>
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #fff;">
+            <img src="./static/images/Protocol.png" alt="Protocol For Each Trial" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
           </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <img src="./static/images/DCD.png" alt="DCD Equation" style="width: 100%; height: auto;">
-            <p class="is-size-7 has-text-centered">Referenced from: <a href="https://proceedings.neurips.cc/paper/2021/file/f3bd5ad57c8389a8a1a541a76be463bf-Paper.pdf" target="_blank">Density-aware Chamfer Distance as a Comprehensive Metric for Point Cloud Completion</a></p>
+          <div class="content has-text-justified">
+            <p>
+              Note: To maximise accuracy, the Analysis Pose should be selected as to minimise occlusions.
+            </p>
           </div>
-        </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!--/ Data collection videos. -->
-    <section class="hero is-light is-small">
-      <div class="hero-body">
-        <h2 class="title is-3">Data Collection</h2>
-        <div class="container">
-          <div id="results-carousel" class="columns is-multiline is-centered">
-            <div class="column is-full-mobile is-one-third-tablet">
-              <div class="publication-video">
-                <p class="has-text-centered">Shore 40A Objects</p>
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/CLGSkHOWlE0" 
-                  title="YouTube video player" frameborder="0" allow="accelerometer; 
-                  autoplay; clipboard-write; encrypted-media; gyroscope; 
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
+  <!-- Explaination of score calculations. -->
+  <section class="section" style="background-color: #f8f9fa; padding: 3rem 0;">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h3 class="title is-3">SoGraB Score Calculation</h3>
+          <div class="content has-text-justified">
+            <p>
+              The scoring system evaluates grasp quality using three features, the grasp success, holding time and deformation. The deformation of the objects are determined by calculating the Density-Aware Chamfer Distance (DCD) between point clouds taken before and during the grasp. 
+              This metric ensures that the deformation is quantified accurately, enabling a fair comparison of different soft gripper designs.
+            </p>
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <img src="./static/images/Final Score.png" alt="SoGraB Score" style="width: 100%; height: auto;">
             </div>
-            <div class="column is-full-mobile is-one-third-tablet">
-              <div class="publication-video">
-                <p class="has-text-centered">Shore 60A Objects</p>
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/F9WXDZuOX3k" 
-                  title="YouTube video player" frameborder="0" allow="accelerometer; 
-                  autoplay; clipboard-write; encrypted-media; gyroscope; 
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <img src="./static/images/DCD.png" alt="DCD Equation" style="width: 100%; height: auto;">
+              <p class="is-size-7 has-text-centered">Referenced from: <a href="https://proceedings.neurips.cc/paper/2021/file/f3bd5ad57c8389a8a1a541a76be463bf-Paper.pdf" target="_blank">Density-aware Chamfer Distance as a Comprehensive Metric for Point Cloud Completion</a></p>
             </div>
-            <div class="column is-full-mobile is-one-third-tablet">
-              <div class="publication-video">
-                <p class="has-text-centered">Shore 85A Objects</p>
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/eZHFFdV5v0c" 
-                  title="YouTube video player" frameborder="0" allow="accelerometer; 
-                  autoplay; clipboard-write; encrypted-media; gyroscope; 
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--/ Paper video. -->
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="https://github.com/mister-green-020" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>Website source code retrieved from: <a href="https://nerfies.github.io" target="_blank">Nerfies Project</a></p>
+  </section>
+
+  <!--/ Data collection videos. -->
+  <section class="section">
+    <div class="container is-centred has-text-centred">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Data Collection</h2>
+
+          <!-- Carousel -->
+          <div id="results-carousel" class="carousel carousel-animated carousel-animate-slide" data-autoplay="false" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+            <div class="carousel-container">
+              <div class="carousel-item has-background">
+                <div class="publication-video" style="padding: 1rem;">
+                  <p class="has-text-centered">Shore 40A Objects</p>
+                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/CLGSkHOWlE0"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="carousel-item has-background">
+                <div class="publication-video" style="padding: 1rem;">
+                  <p class="has-text-centered">Shore 60A Objects</p>
+                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/F9WXDZuOX3k"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="carousel-item has-background">
+                <div class="publication-video" style="padding: 1rem;">
+                  <p class="has-text-centered">Shore 85A Objects</p>
+                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/eZHFFdV5v0c"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-navigation is-overlay">
+              <div class="carousel-nav-left">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <div class="carousel-nav-right">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p>
+              The videos below show the data collection process for the three gripper designs, which were used to validate our protocol. Each video shows a single trial of a gripper design grasping an object from the EGAD dataset, with the left and right halves of the video showing the point clouds taken before and during the grasp respectively.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/mister-green-020" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>Website source code retrieved from: <a href="https://nerfies.github.io" target="_blank">Nerfies Project</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
