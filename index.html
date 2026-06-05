@@ -215,8 +215,7 @@
   <!--/ Protocol Flowchart. -->
   <section class="section">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths" style="margin: 0 auto;">
-        <div class="column is-10">
+      <div class="column is-three-fifths">
           <h3 class="title is-3">Protocol For Each Trial</h3>
           <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #fff;">
             <img src="./static/images/Protocol.png" alt="Protocol For Each Trial" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
@@ -265,45 +264,51 @@
       <div class="columns is-centered">
         <div class="column is-10">
           <h2 class="title is-3">Data Collection</h2>
+          <div style="display: inline-block; max-width: 80%; width: 80%;">
+            <!-- Carousel -->
+             <div id="video-carousel" style="position: relative; margin: 0 40px;">
+              <div class="swiper-container"
+                style="border-radius: 15px; overflow: visible; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="publication-video" style="padding: 1rem;">
+                      <h3 class="title is-5">Shore 40A Objects</h3>
+                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/CLGSkHOWlE0"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="publication-video" style="padding: 1rem;">
+                      <h3 class="title is-5">Shore 60A Objects</h3>
+                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/F9WXDZuOX3k"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="publication-video" style="padding: 1rem;">
+                      <h3 class="title is-5">Shore 85A Objects</h3>
+                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/eZHFFdV5v0c"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
 
-          <!-- Carousel -->
-          <div id="results-carousel" class="carousel carousel-animated carousel-animate-slide" data-autoplay="false" style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
-            <div class="carousel-container">
-              <div class="carousel-item has-background">
-                <div class="publication-video" style="padding: 1rem;">
-                  <p class="has-text-centered">Shore 40A Objects</p>
-                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/CLGSkHOWlE0"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="carousel-item has-background">
-                <div class="publication-video" style="padding: 1rem;">
-                  <p class="has-text-centered">Shore 60A Objects</p>
-                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/F9WXDZuOX3k"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="carousel-item has-background">
-                <div class="publication-video" style="padding: 1rem;">
-                  <p class="has-text-centered">Shore 85A Objects</p>
-                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/eZHFFdV5v0c"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-next video-prev" style="color: #434343;"></div>
+                <div class="swiper-button-prev video-next" style="color: #434343;"></div>
+
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="carousel-navigation is-overlay">
-              <div class="carousel-nav-left">
-                <i class="fas fa-chevron-left" aria-hidden="true"></i>
-              </div>
-              <div class="carousel-nav-right">
-                <i class="fas fa-chevron-right" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
 
+          
           <div class="content has-text-justified" style="margin-top: 1.5rem;">
             <p>
-              The videos below show the data collection process for the three gripper designs, which were used to validate our protocol. Each video shows a single trial of a gripper design grasping an object from the EGAD dataset, with the left and right halves of the video showing the point clouds taken before and during the grasp respectively.
+              The videos below show the data collection process for the three gripper designs, which were used to validate our protocol. Each video shows a single trial of a gripper design grasping an object from the EGAD dataset, with the black and red point clouds are taken before and during the grasp respectively.
             </p>
           </div>
         </div>
