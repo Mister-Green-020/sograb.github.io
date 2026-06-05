@@ -267,41 +267,53 @@
           <div style="display: block; max-width: 80%; width: 80%; margin: 0 auto;">
             <!-- Carousel -->
              <div id="video-carousel" style="position: relative; margin: 0 40px;">
-              <div class="swiper-container"
-                style="border-radius: 15px; overflow: visible; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
-                <div class="swiper-wrapper" style="display: flex; gap: 16px;">
+              <div class="video-carousel-container"
+                style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
+                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 300%;">
                   <!-- Slide 1 -->
-                  <div class="swiper-slide" style="flex: 0 0 33.333%;">
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 40A Objects</h3>
-                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/CLGSkHOWlE0"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
+                        <iframe src="https://www.youtube.com/embed/CLGSkHOWlE0"
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                      </div>
                     </div>
                   </div>
                   <!-- Slide 2 -->
-                  <div class="swiper-slide" style="flex: 0 0 33.333%;">
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 60A Objects</h3>
-                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/F9WXDZuOX3k"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
+                        <iframe src="https://www.youtube.com/embed/F9WXDZuOX3k"
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                      </div>
                     </div>
                   </div>
                   <!-- Slide 3 -->
-                  <div class="swiper-slide" style="flex: 0 0 33.333%;">
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 85A Objects</h3>
-                      <iframe width="100%" height="240" src="https://www.youtube.com/embed/eZHFFdV5v0c"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
+                        <iframe src="https://www.youtube.com/embed/eZHFFdV5v0c"
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Navigation Arrows -->
-                <div class="swiper-button-next video-prev" style="color: #434343;"></div>
-                <div class="swiper-button-prev video-next" style="color: #434343;"></div>
-
-                <!-- Pagination Dots -->
-                <div class="swiper-pagination"></div>
+                <button id="carousel-prev" aria-label="Previous video"
+                  style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                  ‹
+                </button>
+                <button id="carousel-next" aria-label="Next video"
+                  style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                  ›
+                </button>
               </div>
             </div>
 
@@ -315,6 +327,34 @@
       </div>
     </div>
   </section>
+  <script>
+    (function() {
+      var track = document.querySelector('#video-carousel .video-carousel-track');
+      var slides = document.querySelectorAll('#video-carousel .video-carousel-slide');
+      var prev = document.getElementById('carousel-prev');
+      var next = document.getElementById('carousel-next');
+      if (!track || !prev || !next || slides.length === 0) return;
+      var currentIndex = 0;
+      function updateCarousel() {
+        track.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        prev.disabled = currentIndex === 0;
+        next.disabled = currentIndex === slides.length - 1;
+      }
+      prev.addEventListener('click', function() {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          updateCarousel();
+        }
+      });
+      next.addEventListener('click', function() {
+        if (currentIndex < slides.length - 1) {
+          currentIndex += 1;
+          updateCarousel();
+        }
+      });
+      updateCarousel();
+    })();
+  </script>
   
   <footer class="footer">
     <div class="container">
