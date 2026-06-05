@@ -95,7 +95,7 @@ body {
     height: 0;
     padding-bottom: 56.25%;
 
-    overflow: hidden;
+    overflow: visible;
     border-radius: 10px !important;
 }
 
