@@ -267,50 +267,42 @@
           <div style="display: block; max-width: 80%; width: 80%; margin: 0 auto;">
             
             <div id="video-carousel" style="position: relative; margin: 0 40px;">
-              <div class="video-carousel-container" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
-                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 300%;">
+              <div class="video-carousel-container" style="position: relative; display: flex; flex-direction: column; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0; min-height: 350px; background: #fff;">
+                
+                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 300%; height: 100%;">
                   
-                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
-                    <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 40A Objects</h3>
-                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
-                        <iframe src="https://www.youtube.com/embed/CLGSkHOWlE0"
-                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                      </div>
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1.5rem; box-sizing: border-box;">
+                    <h3 class="title is-5" style="margin-bottom: 1rem; text-align: center;">Shore 40A Objects</h3>
+                    <div class="publication-video">
+                      <iframe src="https://www.youtube.com/embed/CLGSkHOWlE0"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   
-                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
-                    <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 60A Objects</h3>
-                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
-                        <iframe src="https://www.youtube.com/embed/F9WXDZuOX3k"
-                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                      </div>
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1.5rem; box-sizing: border-box;">
+                    <h3 class="title is-5" style="margin-bottom: 1rem; text-align: center;">Shore 60A Objects</h3>
+                    <div class="publication-video">
+                      <iframe src="https://www.youtube.com/embed/F9WXDZuOX3k"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                   
-                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
-                    <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 85A Objects</h3>
-                      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
-                        <iframe src="https://www.youtube.com/embed/eZHFFdV5v0c"
-                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                      </div>
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1.5rem; box-sizing: border-box;">
+                    <h3 class="title is-5" style="margin-bottom: 1rem; text-align: center;">Shore 85A Objects</h3>
+                    <div class="publication-video">
+                      <iframe src="https://www.youtube.com/embed/eZHFFdV5v0c"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
 
               <button id="carousel-prev" aria-label="Previous video"
-                style="position: absolute; top: 50%; left: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10;">
+                style="position: absolute; top: 50%; left: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.95); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10; font-size: 20px; display: flex; align-items: center; justify-content: center; padding-bottom: 4px;">
                 ‹
               </button>
               <button id="carousel-next" aria-label="Next video"
-                style="position: absolute; top: 50%; right: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10;">
+                style="position: absolute; top: 50%; right: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.95); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10; font-size: 20px; display: flex; align-items: center; justify-content: center; padding-bottom: 4px;">
                 ›
               </button>
             </div>
@@ -337,14 +329,14 @@
       var currentIndex = 0;
       
       function updateCarousel() {
-        // Because track is 300% width, moving 1 slide over means translating by (100 / total_slides)
+        // Shifting translation relative to the track's 300% width allocation
         var percentage = (currentIndex * 100) / slides.length;
         track.style.transform = 'translateX(-' + percentage + '%)';
         
         prev.disabled = currentIndex === 0;
         next.disabled = currentIndex === slides.length - 1;
-        prev.style.opacity = currentIndex === 0 ? '0.4' : '1';
-        next.style.opacity = currentIndex === slides.length - 1 ? '0.4' : '1';
+        prev.style.opacity = currentIndex === 0 ? '0.3' : '1';
+        next.style.opacity = currentIndex === slides.length - 1 ? '0.3' : '1';
       }
       
       prev.addEventListener('click', function() {
