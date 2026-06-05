@@ -265,13 +265,12 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3 has-text-centered">Data Collection</h2>
           <div style="display: block; max-width: 80%; width: 80%; margin: 0 auto;">
-            <!-- Carousel -->
-             <div id="video-carousel" style="position: relative; margin: 0 40px; min-height: 420px;">
-              <div class="video-carousel-container"
-                style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0; min-height: 420px;">
-                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 300%;">
-                  <!-- Slide 1 -->
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
+            
+            <div id="video-carousel" style="position: relative; margin: 0 40px;">
+              <div class="video-carousel-container" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
+                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 100%;">
+                  
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 40A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
@@ -281,8 +280,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Slide 2 -->
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
+                  
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 60A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
@@ -292,8 +291,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Slide 3 -->
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; padding: 1rem; box-sizing: border-box;">
+                  
+                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
                       <h3 class="title is-5">Shore 85A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
@@ -304,20 +303,19 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Navigation Arrows -->
-                <button id="carousel-prev" aria-label="Previous video"
-                  style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-                  ‹
-                </button>
-                <button id="carousel-next" aria-label="Next video"
-                  style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-                  ›
-                </button>
               </div>
-            </div>
 
-          
+              <button id="carousel-prev" aria-label="Previous video"
+                style="position: absolute; top: 50%; left: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10;">
+                ‹
+              </button>
+              <button id="carousel-next" aria-label="Next video"
+                style="position: absolute; top: 50%; right: -25px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 10;">
+                ›
+              </button>
+            </div>
+          </div>
+
           <div class="content has-text-justified" style="margin-top: 1.5rem;">
             <p>
               The videos below show the data collection process for the three gripper designs, which were used to validate our protocol. Each video shows a single trial of a gripper design grasping an object from the EGAD dataset, with the black and red point clouds are taken before and during the grasp respectively.
@@ -327,6 +325,7 @@
       </div>
     </div>
   </section>
+
   <script>
     (function() {
       var track = document.querySelector('#video-carousel .video-carousel-track');
@@ -334,24 +333,34 @@
       var prev = document.getElementById('carousel-prev');
       var next = document.getElementById('carousel-next');
       if (!track || !prev || !next || slides.length === 0) return;
+      
       var currentIndex = 0;
+      
       function updateCarousel() {
+        // Moves track smoothly using percentage based on index
         track.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        
+        // Visual feedback for disabled buttons
         prev.disabled = currentIndex === 0;
         next.disabled = currentIndex === slides.length - 1;
+        prev.style.opacity = currentIndex === 0 ? '0.4' : '1';
+        next.style.opacity = currentIndex === slides.length - 1 ? '0.4' : '1';
       }
+      
       prev.addEventListener('click', function() {
         if (currentIndex > 0) {
           currentIndex -= 1;
           updateCarousel();
         }
       });
+      
       next.addEventListener('click', function() {
         if (currentIndex < slides.length - 1) {
           currentIndex += 1;
           updateCarousel();
         }
       });
+      
       updateCarousel();
     })();
   </script>
