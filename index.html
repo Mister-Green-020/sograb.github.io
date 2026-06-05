@@ -268,11 +268,11 @@
             
             <div id="video-carousel" style="position: relative; margin: 0 40px;">
               <div class="video-carousel-container" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); padding: 0;">
-                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 100%;">
+                <div class="video-carousel-track" style="display: flex; transition: transform 0.4s ease; width: 300%;">
                   
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5">Shore 40A Objects</h3>
+                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 40A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
                         <iframe src="https://www.youtube.com/embed/CLGSkHOWlE0"
                           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
@@ -281,9 +281,9 @@
                     </div>
                   </div>
                   
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5">Shore 60A Objects</h3>
+                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 60A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
                         <iframe src="https://www.youtube.com/embed/F9WXDZuOX3k"
                           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
@@ -292,9 +292,9 @@
                     </div>
                   </div>
                   
-                  <div class="video-carousel-slide" style="flex: 0 0 100%; width: 100%; padding: 1rem; box-sizing: border-box;">
+                  <div class="video-carousel-slide" style="width: 33.333%; flex: 0 0 33.333%; padding: 1rem; box-sizing: border-box;">
                     <div class="publication-video" style="padding: 1rem;">
-                      <h3 class="title is-5">Shore 85A Objects</h3>
+                      <h3 class="title is-5" style="margin-bottom: 1rem;">Shore 85A Objects</h3>
                       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; border-radius: 10px;">
                         <iframe src="https://www.youtube.com/embed/eZHFFdV5v0c"
                           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
@@ -337,10 +337,10 @@
       var currentIndex = 0;
       
       function updateCarousel() {
-        // Moves track smoothly using percentage based on index
-        track.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        // Because track is 300% width, moving 1 slide over means translating by (100 / total_slides)
+        var percentage = (currentIndex * 100) / slides.length;
+        track.style.transform = 'translateX(-' + percentage + '%)';
         
-        // Visual feedback for disabled buttons
         prev.disabled = currentIndex === 0;
         next.disabled = currentIndex === slides.length - 1;
         prev.style.opacity = currentIndex === 0 ? '0.4' : '1';
